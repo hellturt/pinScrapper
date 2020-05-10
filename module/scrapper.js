@@ -12,7 +12,7 @@ const scrapPinterest = async keyword => {
         });
         const page = await browser.newPage();
         await page.setDefaultNavigationTimeout(0);
-        await page.setViewport({ width: 2800, height: 3800 })
+        // await page.setViewport({ width: 2800, height: 3800 })
         await page.goto(`https://www.pinterest.com/search/pins/?q=${keyword}`, {
             waitUntil: 'load',
             timeout: 0
@@ -49,7 +49,7 @@ const scrapBehance = async keyword => {
         });
         const page = await browser.newPage();
         await page.setDefaultNavigationTimeout(0);
-        await page.setViewport({ width: 2800, height: 3800 })
+        // await page.setViewport({ width: 2800, height: 3800 })
         await page.goto(`https://www.behance.net/search?field=ui%2Fux&search=${keyword}`, {
             waitUntil: 'load',
             timeout: 0
@@ -86,7 +86,7 @@ const scrapDribbbleMobile = async keyword => {
         });
         const page = await browser.newPage();
         await page.setDefaultNavigationTimeout(0);
-        await page.setViewport({ width: 2800, height: 3800 })
+        // await page.setViewport({ width: 2800, height: 3800 })
         await page.goto(`https://dribbble.com/search/shots/popular/mobile?q=${keyword}`, {
             waitUntil: 'load',
             timeout: 0
@@ -122,7 +122,7 @@ const scrapDribbbleColor = async color => {
         });
         const page = await browser.newPage();
         await page.setDefaultNavigationTimeout(0);
-        await page.setViewport({ width: 2800, height: 3800 })
+        // await page.setViewport({ width: 2800, height: 3800 })
         await page.goto(`https://dribbble.com/shots/popular/mobile?color=${color}`, {
             waitUntil: 'load',
             timeout: 0
